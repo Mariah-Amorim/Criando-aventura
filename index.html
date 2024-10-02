@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em uma caça aos tesouros</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Você estava andando em uma trilha quando encontra um garrafa de vidro com um papel dentro. Você abre e descobre um mapa, que tem vários lugares marcados com um "X", então você decide seguir pra ver onde leva.</p>
+            <button class="btn-proximo" data-proximo="1">Meio das pedras</button>
+            <button class="btn-proximo" data-proximo="2">Atrás de árvores</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você vai até as pedras e acha um pequeno saco com um papel, ele diz que você precisa procurar mais e receberá sua recompensa
+            </p>
+            <button class="btn-proximo" data-proximo="3">Procurar na decida da trilha</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e a andar</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você vai até atrás das árvores e acha um papel colado em uma das, dizendo que a primeira pista é em um lugar relacionado a férias.</p>
+            <button class="btn-proximo" data-proximo="5">Ver o caminho da trilha</button>
+            <button class="btn-proximo" data-proximo="6">Ir até os arbustos</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você desce e tenta  prestar atenção em todos os detalhes, até que uma coisa no chão te chama atenção</p>
+            <button class="btn-proximo" data-proximo="7">Investigar</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide desistir da caça ao tesouro e volta a sua caminhada calma e tranquila, porém pensando no que aquilo poderia ser.
+            </p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você percebe que se continuar descendo a trilha talvez consiga encontrar algo</p>
+            <button class="btn-proximo" data-proximo="7">Investigar</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Nos arbustos você encontra um pequeno papel escrito para você procurar um pouco mais a fundo na floresta.
+            </p>
+            <button class="btn-proximo" data-proximo="8">Voltar e ver o fim da trilha</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Quando você procura na parte da decida da trilha, você acha uma bolsinha com algumas moedas e um papel escrito que você está quase lá. Você se depara com um pequeno rio birfucado antes de alcançar a parte de areia, onde você vê o X.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pela direita</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pela esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você segue de volta para ver a decida para o final da trilha e procura prestar atenção em cada pequeno detalhe do caminho.</p>
+            <button class="btn-proximo" data-proximo="7">Investigar</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você segue, e consegue passar pela parte da direita sem dificuldades. E acha a parte da areia com um "X".</p>
+            <button class="btn-proximo" data-proximo="11">Cavar o X na areia</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>A parte da esquerda fica pantanosa e você tem muita dificuldade para se locomover, aqui não tem um jeito de você chegar na areia.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar para o outro lado</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png"  alt="Parabéns a aventura valeu a pena">
+            <p>Você consegue cavar e acha um pequeno báu cheio de dinheiro e moedas de ouro! Depois disso decide sair e aproveitar a caminhada de ouro que teve.</p>
+        </div>
+        
+        <div class="passo" id="passo-12">
+            <p>Você retorna para a parte da direita e passa sem grandes dificuldades. Assim, voc~e encontra na areia um “X”</p>
+            <button class="btn-proximo" data-proximo="11">Cavar o X na areia</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
